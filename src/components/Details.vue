@@ -3,7 +3,16 @@
     <div class="card shadow border-0">
       <div class="card-body">
         <div class="card-text">
-          <h3>{{blog.title}}</h3>
+          <div class="row">
+            <div class="col-11">
+              <h3>{{blog.title}}</h3>
+            </div>
+            <div class="col-1 text-right" @click="changePage('list')">
+              <button class="btn btn-link text-success">
+                <i class="fas fa-2x fa-arrow-circle-left"></i>
+              </button>
+            </div>
+          </div>
           <p>{{blog.body}}</p>
         </div>
       </div>
